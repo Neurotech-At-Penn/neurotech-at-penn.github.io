@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Neurotech @ Penn</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080f20;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #101b33;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      color: #64d9ff;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #64d9ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 110px 20px;
+      background: linear-gradient(135deg, #101b33, #24205a);
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 65px);
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #64d9ff;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 28px;
+      color: #c5d3eb;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 28px;
+      background: #43c7f5;
+      color: #081225;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 75px 10%;
+    }
+
+    section h2 {
+      color: #64d9ff;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      color: #c5d3eb;
+      max-width: 800px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #14213d;
+      border: 1px solid #293b60;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      color: #64d9ff;
+      margin-bottom: 12px;
+    }
+
+    #join {
+      text-align: center;
+      background: #101b33;
+    }
+
+    #join p {
+      margin: 0 auto 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #9aabc7;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Neurotech @ Penn</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="#projects">Projects</a>
+      <a href="#join">Join Us</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Exploring the <span>Future</span><br>
+    of the Human Brain</h1>
+
+    <p>
+      Welcome to Penn's first Neurotech Club!
+      We bring together students interested in
+      neuroscience, engineering, artificial intelligence,
+      and brain-computer interfaces!
+    </p>
+
+    <a href="#join" class="btn">Get Involved</a>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+
+    <p>
+      We are a community of curious students passionate
+      about understanding the brain and developing
+      technologies that connect neuroscience with
+      engineering and innovation.
+
+      Whether you study biology, computer science,
+      engineering, or psychology, there's a place for you!
+    </p>
+  </section>
+
+  <section id="activities">
+    <h2>What We Do</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🧠 Workshops</h3>
+        <p>
+          Learn about EEG, neural signals,
+          neuroscience, and brain-computer interfaces.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🔬 Research</h3>
+        <p>
+          Explore emerging research in neurotechnology
+          and discover new scientific developments.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💻 Projects</h3>
+        <p>
+          Collaborate with other students to build
+          exciting neurotechnology projects.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Our Projects</h2>
+
+    <p>
+      From EEG experiments to brain-computer interfaces,
+      we aim to turn innovative ideas into reality.
+
+      Check back soon to see what our members are building!
+    </p>
+  </section>
+
+  <section id="join">
+    <h2>Interested in Joining?</h2>
+
+    <p>
+      You don't need previous experience.
+      Just bring your curiosity and enthusiasm!
+    </p>
+
+    <a class="btn"
+       href="https://pennclubs.com/club/neurotechpenn-nap/"
+       target="_blank"
+       rel="noopener noreferrer">
+       Join Neurotech Penn
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Neurotech @ Penn | All Rights Reserved
+  </footer>
+
+</body>
+</html>
